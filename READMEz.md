@@ -50,28 +50,39 @@
 <html>
 <title>www.ken's entreprise.about us.com</title>
 <head>
-<!--About-->
-<section id="about" class="card">
-<h2>About Us</h2>
-</head>
-<body>
-<p>We are a community-focused Entrprise that cares for your day today life. With excellent interaction lifestyle. Affordable prices, eco-friendly machines, and experienced staff.</p>
-<p>The founder of KEN'S ENTREPRISE is a well known certified proffession in Accounting and Finance with 10 years of experience plus his devotion to bring up economic development projects that are here to ease people's lives.<br>He developed this idea from the business camp he attended to in the past three years at EDUCATE Org. in Matuga.</p>
-<p>Kenneth Azaliya Waisswa is a 29 year old male, Ugandan and a musoga by tribe.<br>The entriprise's mission is ",<i>promote all round flexibility"</i> and a vision <i>"To be one of the best flexible Entreprise"</i>
-</section>
-</body>
-</html><!doctype html>
+<!doctype html>
 <html>
-<title>www.ken's entreprise.about us.com</title>
 <head>
-<!--About-->
-<section id="about" class="card">
-<h2>About Us</h2>
-</head>
+<title>www.ken's entreprise.contact.com</title>
 <body>
-<p>We are a community-focused Entrprise that cares for your day today life. With excellent interaction lifestyle. Affordable prices, eco-friendly machines, and experienced staff.</p>
-<p>The founder of KEN'S ENTREPRISE is a well known certified proffession in Accounting and Finance with 10 years of experience plus his devotion to bring up economic development projects that are here to ease people's lives.<br>He developed this idea from the business camp he attended to in the past three years at EDUCATE Org. in Matuga.</p>
-<p>Kenneth Azaliya Waisswa is a 29 year old male, Ugandan and a musoga by tribe.<br>The entriprise's mission is ",<i>promote all round flexibility"</i> and a vision <i>"To be one of the best flexible Entreprise"</i>
+<!--CONTACT-->
+<section id="contact" class="card">
+<h2>Contact Us</h2>
+<form id="contactform">
+<div class="grid">
+<label>Name</label>
+<input type="text"id="name"placeholder="Your name"required/>
+<label>Email</label>
+<input type="email"id="email"placeholder="email"required/>
+<label>Message</label>
+<textarea id="message" rows="4"placeholder="How can we help you?"required></textarea>
+<button type="submit">send Message</button>
+<p id="result"style="color:red;font-size:14px"></p>
+</div>
+</form>
 </section>
+
+<footer>
+<p><span id="year"></span>KEN'S ENTREPRISE LIMITED</p>
+</footer>
+<p>You can even use <u>+256509164847</u> or <u> jamalasaba5024@gmail.com</u><br>We are located in Makindye, end's corner on katende street. and we operate Monday to Sunday, come today and reach your highest never expectations and experience, thank you.</p> 
+<script>
+document.getElementById('year').textContent=new date().getFullyear();
+document.getElementById('contact form').addEventlistener('submit',function(e){e.preventDefault();
+var n=document.getElementById('name').value.trim();
+if(!n)document.getElementById('result').textcontent='Please enter your name.';return}
+document.getElementById('result').textcontent='Thanks,'+n+'-messagr received(demo).';this.reset();
+};
+</script>
 </body>
 </html>
